@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body class="text-lg font-kumbh bg-dark-cyan bg-[url(./images/bg-pattern-top.svg)] bg-no-repeat bg-contain bg-left-top">
+    <main class="flex items-center justify-center h-screen bg-[url(./images/bg-pattern-bottom.svg)] bg-no-repeat bg-contain bg-right-bottom">
+      <section class="flex flex-col items-center bg-white rounded-xl">
+        <img class="rounded-t-xl" src="./images/bg-pattern-card.svg" alt="Background card" />
+        <div class="relative flex flex-col items-center mt-16">
+          <img class="rounded-full border-4 border-solid border-white absolute -top-[7.5rem]" src="./images/image-victor.jpg" alt="Avatar Victor Crest" />
+          <h1 class="font-bold">Victor Crest <span class="text-dark-gray font-normal">26</span></h1>
+          <p class="text-dark-gray text-base">London</p>
+        </div>
+
+        <div class="flex items-start justify-around border-t-[1px] border-solid border-dark-gray/20 w-full px-4 py-6 mt-4">
+          <div class="flex flex-col items-center">
+            <p class="font-bold">80K</p>
+            <span class="text-xs tracking-widest text-dark-gray">Followers</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <p class="font-bold">803K</p>
+            <span class="text-xs tracking-widest text-dark-gray">Likes</span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <p class="font-bold">1.4K</p>
+            <span class="text-xs tracking-widest text-dark-gray">Photos</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+  </body>
+</html>
+<!-- npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch -->
